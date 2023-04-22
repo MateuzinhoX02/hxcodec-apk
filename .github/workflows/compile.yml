@@ -44,7 +44,7 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib --quiet install lime
-          haxelib install hxcpp
+          haxelib --quiet install hxcpp > /dev/null
           haxelib --quiet install lime-samples
           haxelib --quiet install openfl 
           haxelib --never --quiet install flixel
